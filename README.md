@@ -1,2 +1,2 @@
 # speechSynthesis
-Text to speech synthesis usin gweb api
+Text to speech synthesis usin web api
