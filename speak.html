@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech from Text</title>
+</head>
+<body align='center'>
+<h1 color='salmon'> Speech Synthesis </h1>
+  <input id="textToBeRead" placeholder="Whatever you type here will be read outloud" style="width:75%"><p>
+  <button onclick="readOutLoud()">Read it now</button>
+
+<script>
+  function readOutLoud() { // https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis
+    //alert(`readOutLoud() should read out loud "${document.getElementById('textToBeRead').value}"` )
+    
+    // : Your computer, tablet, and phone should read out loud whatever is typed.
+    var utterThis = new SpeechSynthesisUtterance(textToBeRead.value);
+    speechSynthesis.speak(utterThis);
+    // : remember to remove any debug statements when you are done.
+  }
+</script>
+</body>
+</html>
